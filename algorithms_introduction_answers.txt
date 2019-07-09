@@ -1,0 +1,57 @@
+1. Using proper pseudo-code, describe the following primitive algorithms:
+A: 
+Making coffee
+FUNCTION
+  IF coffee filter is not in filter basket THEN add coffee filter to basket THEN
+    IF coffee ground amount is enough for 2 cups THEN
+      WHILE coffee is not finished brewing
+        keep brewing
+      END WHILE
+      PRINT coffee
+    END IF
+  END IF
+END FUNCTION
+
+Washing dishes
+FUNCTION
+  WHILE sink is not filled up with water
+    Increment water
+  END WHILE
+  ADD soap to sponge
+  FOR each dish that's in the sink
+    IF dish is dirty
+      wash dish
+      rinse dish
+      dry dish
+      put dish up
+    ELSE
+      rinse dish
+      dry dish
+      put dish up
+    END IF
+  END FOR
+END FUNCTION
+
+Making a sandwich
+FUNCTION
+  IF I have 2 slices of bread
+    put turkey on slice 1
+    put cheese on slice 2
+    IF the 2 slices are not empty
+      combine 2 slices together
+      PRINT sandwich
+    END IF
+  END IF
+END FUNCTION
+
+2. Facebook, Amazon, Netflix
+Facebook's algorithm quickly works in the background and decides what to show you on your newfeeds. They're always working
+to show the top most relevant information within your networks.
+Amazon uses algorithms to display sugestions for shopping based off of past searches and order history. Again they're working
+to show customers what they think is relevant to them. 
+Netflix uses their technology to give suggestions on what to watch based off of past viewing history and category patterns. 
+They're also going to use information around age and demographic to try to keep you on the platform as long as possible. 
+
+3. An efficent algorithm is made by having clear steps throught the entire process. It minimizes errors without affecting the outcome. 
+It should be fast and efficient with solid and consistant results. An inefficient algorithm is one that takes extra unnecessary steps.
+It may produce inconsistent results and use to many resources while working.

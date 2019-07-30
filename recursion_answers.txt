@@ -1,0 +1,55 @@
+1. 
+Recursion and iteration are both techniques. While recursion is a function that calls itself with parameters 
+incrementally moving toward one of the base cases, iteration uses a loop to repeat a process.
+
+2.
+fibonacci sequence
+factorial
+merge sort
+quick sort
+binary tree
+
+3.
+Recursion should be used when an algorithm can be defined as a combination of sub-results starting with known cases.
+An example of that is when you're calculating a factorial.
+Recursion should be avoid when running straight through a date set. Trying to find a max value in an array. 
+
+4. 
+You would have similar results with both techniques. Differeces include how the algorithms get their results.
+When iteration is used, the code looks much simpler, while recursion seems to look more complicated. 
+Also when calculating a factorial using iteration it looks more complicated than when using recursion.
+
+5. 
+var arrayNested = [[1,2],[3,4],[5, [6, 7],[[8, 9, 10],[11, 12],13, 14]]];
+var count = 0;
+
+function countItems(arr){
+  if(!Array.isArray(arr)){
+     count++;
+  } else {
+    for(var i = 0; i < arr.length; i++){
+      countItems(arr[i]);
+    }
+  }
+  return count;
+}
+
+console.log(countItems(arrayNested));
+
+6.
+function palindromCheck(word){
+  if (word.length <= 1) {
+    return true;
+  } else if (word[0] === word[word.length -1]) {
+    return palindromCheck(word.slice(1, word.length -1) );
+  }
+  return false;
+}
+
+console.log(palindromCheck("racecar"));
+console.log(palindromCheck("Mike"));
+console.log(palindromCheck("wow"));
+
+7.
+With searching for "recursion" you're running a search on "recursion". When Google displays "Did you mean: recursion"
+it's bascaiily asking to to rerun the search on "recursion" within the "recursion" search you already ran. 
